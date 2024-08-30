@@ -71,6 +71,7 @@
             // 
             this.textBoxDirectory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxDirectory.BackColor = System.Drawing.Color.White;
             this.textBoxDirectory.Enabled = false;
             this.textBoxDirectory.Location = new System.Drawing.Point(10, 25);
             this.textBoxDirectory.Name = "textBoxDirectory";
@@ -80,17 +81,20 @@
             // buttonFolderBrowser
             // 
             this.buttonFolderBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFolderBrowser.BackColor = System.Drawing.Color.White;
             this.buttonFolderBrowser.Location = new System.Drawing.Point(524, 25);
             this.buttonFolderBrowser.Name = "buttonFolderBrowser";
             this.buttonFolderBrowser.Size = new System.Drawing.Size(26, 23);
             this.buttonFolderBrowser.TabIndex = 1;
             this.buttonFolderBrowser.Text = "..";
-            this.buttonFolderBrowser.UseVisualStyleBackColor = true;
+            this.buttonFolderBrowser.UseVisualStyleBackColor = false;
             this.buttonFolderBrowser.Click += new System.EventHandler(this.buttonFolderBrowser_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 19);
@@ -100,19 +104,23 @@
             // buttonInstall
             // 
             this.buttonInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonInstall.BackColor = System.Drawing.Color.White;
             this.buttonInstall.Enabled = false;
+            this.buttonInstall.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.buttonInstall.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonInstall.Location = new System.Drawing.Point(440, 341);
             this.buttonInstall.Name = "buttonInstall";
             this.buttonInstall.Size = new System.Drawing.Size(112, 23);
             this.buttonInstall.TabIndex = 4;
             this.buttonInstall.Text = "Install / Update";
-            this.buttonInstall.UseVisualStyleBackColor = true;
+            this.buttonInstall.UseVisualStyleBackColor = false;
             this.buttonInstall.Click += new System.EventHandler(this.buttonInstall_Click);
             // 
             // labelStatus
             // 
             this.labelStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelStatus.AutoSize = true;
+            this.labelStatus.ForeColor = System.Drawing.SystemColors.Control;
             this.labelStatus.Location = new System.Drawing.Point(7, 346);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(78, 19);
@@ -149,6 +157,7 @@
             this.listViewMods.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.listViewMods.BackColor = System.Drawing.Color.White;
             this.listViewMods.CheckBoxes = true;
             this.listViewMods.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderName,
@@ -357,32 +366,38 @@
             // buttonModInfo
             // 
             this.buttonModInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonModInfo.BackColor = System.Drawing.Color.White;
             this.buttonModInfo.Enabled = false;
+            this.buttonModInfo.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.buttonModInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonModInfo.Location = new System.Drawing.Point(322, 341);
             this.buttonModInfo.Name = "buttonModInfo";
             this.buttonModInfo.Size = new System.Drawing.Size(112, 23);
             this.buttonModInfo.TabIndex = 9;
             this.buttonModInfo.Text = "View Mod Info";
-            this.buttonModInfo.UseVisualStyleBackColor = true;
+            this.buttonModInfo.UseVisualStyleBackColor = false;
             this.buttonModInfo.Click += new System.EventHandler(this.buttonModInfo_Click);
             // 
             // buttonToggleMods
             // 
             this.buttonToggleMods.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonToggleMods.BackColor = System.Drawing.Color.White;
             this.buttonToggleMods.Enabled = false;
+            this.buttonToggleMods.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.buttonToggleMods.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonToggleMods.Location = new System.Drawing.Point(204, 341);
             this.buttonToggleMods.Name = "buttonToggleMods";
             this.buttonToggleMods.Size = new System.Drawing.Size(112, 23);
             this.buttonToggleMods.TabIndex = 10;
             this.buttonToggleMods.Text = "Disable Mods";
-            this.buttonToggleMods.UseVisualStyleBackColor = true;
+            this.buttonToggleMods.UseVisualStyleBackColor = false;
             this.buttonToggleMods.Click += new System.EventHandler(this.buttonToggleMods_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(566, 376);
             this.Controls.Add(this.buttonToggleMods);
             this.Controls.Add(this.buttonModInfo);
@@ -396,7 +411,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Better Monke Mod Manager";
+            this.Text = "Better Mod Manager";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControlMain.ResumeLayout(false);
             this.Plugins.ResumeLayout(false);

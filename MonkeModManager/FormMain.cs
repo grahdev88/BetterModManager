@@ -7,6 +7,7 @@ using System.Net;
 using System.IO;
 using System.IO.Compression;
 using System.Threading;
+using System.Deployment.Data;
 using MonkeModManager.Internals;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
@@ -14,6 +15,8 @@ using MonkeModManager.Internals.SimpleJSON;
 using System.Text.RegularExpressions;
 using System.Reflection;
 using System.Media;
+using System.Net.Http;
+using Application = System.Deployment.Data.Application;
 
 namespace MonkeModManager
 {
@@ -32,6 +35,7 @@ namespace MonkeModManager
         public FormMain()
         {
             InitializeComponent();
+            Application.Start();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -39,7 +43,6 @@ namespace MonkeModManager
             LocationHandler();
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             releases = new List<ReleaseInfo>();
-            Utilla.Utils.RoomUtils.RoomPatch();
             labelVersion.Text = "BetterModManager";
             if (!File.Exists(Path.Combine(InstallDirectory, "winhttp.dll")))
             {
@@ -70,8 +73,8 @@ namespace MonkeModManager
         private void LoadReleases()
         {
 #if !DEBUG
-            var decodedMods = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/DeadlyKitten/MonkeModInfo/master/modinfo.json"));
-            var decodedGroups = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/DeadlyKitten/MonkeModInfo/master/groupinfo.json"));
+            var decodedMods = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/grahdev88/BetterModManager/master/modinfo.json"));
+            var decodedGroups = JSON.Parse(DownloadSite("https://raw.githubusercontent.com/grahdev88/BetterModManager/master/groupinfo.json"));
 #else
             var decoded = JSON.Parse(File.ReadAllText("C:/Users/Steven/Desktop/testmods.json"));
 #endif
@@ -160,7 +163,6 @@ namespace MonkeModManager
             }));
            
             UpdateStatus("Release info updated!");
-
         }
 
         private void UpdateReleaseInfo(ref ReleaseInfo release)
