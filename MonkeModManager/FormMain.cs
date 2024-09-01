@@ -41,6 +41,7 @@ namespace MonkeModManager
         private void FormMain_Load(object sender, EventArgs e)
         {
             LocationHandler();
+
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             releases = new List<ReleaseInfo>();
             labelVersion.Text = "BetterModManager";

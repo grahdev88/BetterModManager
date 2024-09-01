@@ -49,7 +49,15 @@
       "gitPath": "iiDk-the-actual/iis.Stupid.Menu",
       "releaseId": 0,
       "author": "IIDK",
-      "group": "Cheats",
+      "group": "Cheats"
+    },
+    {
+      "name": "Yizzy Camera Mod",
+      "tag": "",
+      "gitPath": "Yizzii/YizziCamModV2",
+      "releaseId": 0,
+      "author": "Yizzy",
+      "group": "Gameplay"
     },
     {
       "name": "Utilla",

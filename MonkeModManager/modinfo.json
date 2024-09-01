@@ -301,4 +301,12 @@
     "group": "Cheats",
     "download_url": "https://github.com/iiDk-the-actual/iis.Stupid.Menu/releases/download/4.3.1/iis_Stupid_Menu.dll"
   }
+  {
+    "name": "Yizzy Camera Mod",
+    "author": "Yizzy",
+    "version": "1.0.8",
+    "git_path": "Yizzii/YizziCamModV2",
+    "group": "Gameplay",
+    "download_url": "https://github.com/Yizzii/YizziCamModV2/releases/download/beta1.0.8/YizziCamModV2.dll"
+  }
 ]

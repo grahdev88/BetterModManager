@@ -1,0 +1,6 @@
+C:\Users\XM\Desktop\BetterModManager-main\BetterModManager-main\MonkeModManager\obj\Debug\BetterModManager.csproj.AssemblyReference.cache
+C:\Users\XM\Desktop\BetterModManager-main\BetterModManager-main\MonkeModManager\obj\Debug\MonkeModManager.FormMain.resources
+C:\Users\XM\Desktop\BetterModManager-main\BetterModManager-main\MonkeModManager\obj\Debug\MonkeModManager.FormSelectPlatform.resources
+C:\Users\XM\Desktop\BetterModManager-main\BetterModManager-main\MonkeModManager\obj\Debug\BetterModManager.Properties.Resources.resources
+C:\Users\XM\Desktop\BetterModManager-main\BetterModManager-main\MonkeModManager\obj\Debug\BetterModManager.csproj.GenerateResource.cache
+C:\Users\XM\Desktop\BetterModManager-main\BetterModManager-main\MonkeModManager\obj\Debug\BetterModManager.csproj.CoreCompileInputs.cache
