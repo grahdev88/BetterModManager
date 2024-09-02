@@ -91,14 +91,6 @@
          "author" : "James Newton-King",
          "group" : "Libraries"
       }
-      {
-        "name": "Yizzy Camera Mod",
-        "tag": "",
-        "gitPath": "Yizzii/YizziCamModV2",
-        "releaseId": 0,
-        "author": "Yizzy",
-        "group": "Gameplay"
-      },
    ],
    "groups" : [
      {
